@@ -19,7 +19,7 @@ export const siteConfig = {
   email: process.env.NEXT_PUBLIC_EMAIL ?? "jigneshraheja2101@gigzs.com",
   linkedin:
     process.env.NEXT_PUBLIC_LINKEDIN_URL ??
-    "https://www.linkedin.com/in/jignesh-raheja",
+    "https://www.linkedin.com/in/jignesh-raheja-2a4a14323/",
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP ?? "", // digits only, e.g. 919999999999
   calendly: process.env.NEXT_PUBLIC_CALENDLY_URL ?? "",
 
