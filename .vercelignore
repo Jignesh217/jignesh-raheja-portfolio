@@ -1,0 +1,20 @@
+# Upload ONLY the portfolio. This folder also contains many unrelated
+# projects, node_modules, build caches and large zips — ignore everything,
+# then re-include just what the Next.js build needs.
+
+/*
+
+!/app
+!/lib
+!/public
+!/package.json
+!/package-lock.json
+!/next.config.mjs
+!/postcss.config.mjs
+!/tailwind.config.ts
+!/tsconfig.json
+!/.eslintrc.json
+
+# drop unrelated akhort artifacts that live under allowed paths
+/public/downloads
+/lib/mcp.ts

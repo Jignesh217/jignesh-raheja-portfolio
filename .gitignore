@@ -53,3 +53,5 @@ next-env.d.ts
 # unrelated akhort artifacts that live under portfolio paths
 /public/downloads/
 /lib/mcp.ts
+
+.vercel
