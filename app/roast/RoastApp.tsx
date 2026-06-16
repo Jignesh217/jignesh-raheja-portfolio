@@ -74,7 +74,7 @@ export function RoastApp() {
           </h1>
           <p className="mt-6 max-w-xl border-l-[6px] border-black pl-4 text-sm leading-relaxed sm:text-base">
             Paste a URL. Get it taken apart, line by line. Then — if you can take a hint —
-            get it rebuilt by someone who won't let it happen again.
+            get it rebuilt by someone who won&apos;t let it happen again.
           </p>
         </header>
 

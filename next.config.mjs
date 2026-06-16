@@ -9,6 +9,10 @@ const nextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
   },
+  async redirects() {
+    // /v2 was the brutalist preview route; it's now the homepage.
+    return [{ source: "/v2", destination: "/", permanent: false }];
+  },
 };
 
 export default nextConfig;

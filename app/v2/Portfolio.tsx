@@ -58,7 +58,7 @@ function HeadlineMachine() {
   const shuffle = () => setIdx(idx.map((_, i) => Math.floor(Math.random() * SLOTS[i].length)));
   return (
     <div className="border-[3px] border-black bg-white p-6 sm:p-10" style={{ boxShadow: "8px 8px 0 #000" }}>
-      <div className="text-xs font-bold uppercase tracking-[0.25em] text-black/50">// the elevator pitch, randomised</div>
+      <div className="text-xs font-bold uppercase tracking-[0.25em] text-black/50">{"// the elevator pitch, randomised"}</div>
       <p className="mt-4 text-3xl font-black uppercase leading-[1.05] sm:text-5xl">
         I build{" "}
         <button onClick={shuffle} className="inline-block border-[3px] border-black px-2 align-middle text-black" style={{ background: "var(--accent)" }}>
@@ -254,14 +254,14 @@ export function Portfolio() {
         {/* STICKER BOARD */}
         <section className="pb-14 sm:pb-20">
           <h2 className="mb-2 text-4xl font-black uppercase tracking-tighter sm:text-6xl">DRAG STUFF AROUND</h2>
-          <p className="mb-6 text-sm font-bold uppercase tracking-widest text-black/50">// because static is boring. grab the stickers.</p>
+          <p className="mb-6 text-sm font-bold uppercase tracking-widest text-black/50">{"// because static is boring. grab the stickers."}</p>
           <StickerBoard />
         </section>
 
         {/* ROAST CTA */}
         <section className="pb-14 sm:pb-20">
           <a href="/roast" className="block border-[3px] border-black p-8 text-black transition-transform hover:-translate-x-1 hover:-translate-y-1 sm:p-12" style={{ background: "var(--accent)", boxShadow: "10px 10px 0 #000" }}>
-            <div className="text-xs font-black uppercase tracking-[0.3em]">// the side quest</div>
+            <div className="text-xs font-black uppercase tracking-[0.3em]">{"// the side quest"}</div>
             <p className="mt-3 text-4xl font-black uppercase leading-none sm:text-7xl">ROAST MY SITE 🔥</p>
             <p className="mt-4 max-w-xl text-base font-bold leading-snug">Paste any URL and watch me tear it apart, line by line — then offer to fix it. Free brutality. Click to play →</p>
           </a>
@@ -286,7 +286,7 @@ export function Portfolio() {
 
           <footer className="mt-16 flex flex-wrap items-center justify-between gap-3 border-t-[3px] border-white/30 pt-5 text-[11px] font-bold uppercase tracking-[0.2em] text-white/50">
             <span>{siteConfig.name} — {siteConfig.role}</span>
-            <a href="/" className="underline decoration-2 underline-offset-4 hover:text-white">the parkour version →</a>
+            <a href="/parkour" className="underline decoration-2 underline-offset-4 hover:text-white">the parkour version →</a>
           </footer>
         </div>
       </section>
