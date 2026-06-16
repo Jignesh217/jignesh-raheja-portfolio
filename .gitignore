@@ -1,0 +1,55 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+.env
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# vercel
+.vercel
+
+# unrelated projects / artifacts that happen to live in this folder —
+# NOT part of the portfolio and must never be published
+/akhort/
+/akhrot-mcp-integration/
+/all mcp/
+/mcp/
+/nut-openwispr/
+/nuts-windows/
+/orchestration-main/
+/gml-extension/
+/gml-extension-unzipped/
+/.np/
+/.nuts-push2/
+/.nuts-push3/
+/.nx*/
+*.zip
+
+# local tooling / editor state
+/.claude/
+
+# unrelated akhort artifacts that live under portfolio paths
+/public/downloads/
+/lib/mcp.ts
