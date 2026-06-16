@@ -1,35 +1,22 @@
 import type { Metadata, Viewport } from "next";
-import { Fraunces } from "next/font/google";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { siteConfig } from "@/lib/site";
-import { SmoothScroll } from "@/components/providers/SmoothScroll";
-import { Cursor } from "@/components/ui/Cursor";
 import "./globals.css";
-
-// Iconic, high-contrast display serif — the "title screen" face.
-const display = Fraunces({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "900"],
-  style: ["normal", "italic"],
-  variable: "--font-display",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} — An interactive experience`,
+    default: `${siteConfig.name} — Full-Stack Developer & Product Builder`,
     template: `%s — ${siteConfig.name}`,
   },
-  description:
-    "Most websites are forgotten. Some become experiences. A short, playable black-and-white journey by Jignesh Raheja — full-stack developer & product builder.",
+  description: siteConfig.description,
   keywords: [
     "Jignesh Raheja",
-    "interactive experience",
-    "creative developer",
-    "web designer",
+    "full-stack developer",
     "product builder",
+    "web developer",
+    "AI tools",
     "freelance developer",
   ],
   authors: [{ name: siteConfig.name, url: siteConfig.url }],
@@ -39,20 +26,19 @@ export const metadata: Metadata = {
     type: "website",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `${siteConfig.name} — An interactive experience`,
-    description:
-      "A short, playable black-and-white journey. Most websites are forgotten. Some become experiences.",
+    title: `${siteConfig.name} — Full-Stack Developer & Product Builder`,
+    description: siteConfig.description,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} — An interactive experience`,
-    description: "Most websites are forgotten. Some become experiences.",
+    title: `${siteConfig.name} — Full-Stack Developer & Product Builder`,
+    description: siteConfig.tagline,
   },
   robots: { index: true, follow: true },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#000000",
+  themeColor: "#ffffff",
   width: "device-width",
   initialScale: 1,
 };
@@ -84,19 +70,18 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${display.variable} ${GeistSans.variable} ${GeistMono.variable}`}
+      className={`${GeistSans.variable} ${GeistMono.variable}`}
       suppressHydrationWarning
     >
-      <body className="grain min-h-screen bg-void antialiased">
+      <body className="min-h-screen bg-white text-black antialiased">
         <PersonJsonLd />
         <a
           href="#contact"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-black"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:border-[3px] focus:border-black focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-bold focus:text-black"
         >
           Skip to contact
         </a>
-        <Cursor />
-        <SmoothScroll>{children}</SmoothScroll>
+        {children}
       </body>
     </html>
   );

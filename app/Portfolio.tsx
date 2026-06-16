@@ -286,7 +286,7 @@ export function Portfolio() {
 
           <footer className="mt-16 flex flex-wrap items-center justify-between gap-3 border-t-[3px] border-white/30 pt-5 text-[11px] font-bold uppercase tracking-[0.2em] text-white/50">
             <span>{siteConfig.name} — {siteConfig.role}</span>
-            <a href="/parkour" className="underline decoration-2 underline-offset-4 hover:text-white">the parkour version →</a>
+            <a href="/roast" className="underline decoration-2 underline-offset-4 hover:text-white">roast a site →</a>
           </footer>
         </div>
       </section>

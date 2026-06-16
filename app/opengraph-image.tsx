@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { siteConfig } from "@/lib/site";
 
 export const runtime = "edge";
-export const alt = `${siteConfig.name} — An interactive experience`;
+export const alt = `${siteConfig.name} — Full-Stack Developer & Product Builder`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -16,38 +16,45 @@ export default function OpengraphImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          background: "#000000",
-          padding: "72px",
-          fontFamily: "Georgia, serif",
+          background: "#ffffff",
+          color: "#000000",
+          padding: "56px",
+          border: "18px solid #000000",
         }}
       >
         <div
           style={{
-            position: "absolute",
-            top: "45%",
-            left: "50%",
-            width: 520,
-            height: 520,
-            marginLeft: -260,
-            marginTop: -260,
-            borderRadius: 999,
-            background:
-              "radial-gradient(circle, rgba(255,255,255,0.16), transparent 70%)",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "flex-start",
+            fontSize: 26,
+            fontWeight: 800,
+            letterSpacing: 2,
           }}
-        />
-        <span style={{ color: "#888", fontSize: 26, letterSpacing: 4 }}>
-          {siteConfig.name.toUpperCase()}
-        </span>
-        <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ color: "#fff", fontSize: 82, fontStyle: "italic", lineHeight: 1.05 }}>
-            Most websites are forgotten.
-          </div>
-          <div style={{ color: "#9a9a9a", fontSize: 82, fontStyle: "italic", lineHeight: 1.05 }}>
-            Some become experiences.
-          </div>
+        >
+          <span>{siteConfig.name.toUpperCase()}</span>
+          <span style={{ background: "#ff2d1a", color: "#fff", padding: "8px 18px" }}>
+            AVAILABLE FOR WORK
+          </span>
         </div>
-        <span style={{ color: "#666", fontSize: 24, letterSpacing: 6 }}>
-          AN INTERACTIVE EXPERIENCE
+
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            fontSize: 110,
+            fontWeight: 900,
+            lineHeight: 0.92,
+            letterSpacing: -3,
+          }}
+        >
+          <span>I BUILD</span>
+          <span>DIGITAL</span>
+          <span style={{ color: "#ff2d1a" }}>PRODUCTS.</span>
+        </div>
+
+        <span style={{ fontSize: 28, fontWeight: 700, letterSpacing: 1 }}>
+          {siteConfig.role.toUpperCase()}
         </span>
       </div>
     ),
